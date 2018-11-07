@@ -4,7 +4,7 @@ body {
   line-height: 1.2;
   color: #333;
   max-width: 800px;
-  margin: 50px auto auto auto;
+  margin: 100px auto auto auto;
   text-align: center;
 }
 
@@ -15,6 +15,14 @@ a, a:visited {
 a:hover {
   color: #fff;
   background-color: #333;
+}
+
+.form {
+  margin-top: 100px;
+}
+
+footer {
+  margin-top: 100px;
 }
 
 
