@@ -88,10 +88,11 @@ footer {
     margin: 40px;
   }
   .form {
-    margin-top: 60px;
+    margin-top: 50px;
   }
   input {
-    padding: 13px
+    padding: 13px;
+    margin-top: 40px;
   }
 }
 
