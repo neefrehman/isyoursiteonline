@@ -1,7 +1,7 @@
 body {
   margin: 60px auto auto auto;
   max-width: 800px;
-  background-color: #eceff1;
+  background-color: #fff;
   font-family: helvetica neue, helvetica, arial, sans-serif;
   font-size: 14px;
   line-height: 1.4;
@@ -12,7 +12,7 @@ body {
 .logo {
   width: 70%;
   min-width: 200px;
-  max-width: 450px;
+  max-width: 400px;
 }
 
 a, a:visited {
@@ -25,11 +25,11 @@ a:hover {
 }
 
 .main {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .description {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 input {
@@ -71,28 +71,17 @@ input:focus, select:focus, textarea:focus, button:focus {
 }
 
 footer {
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translate(-50%, 0);
+  margin: 40px 0 20px 0;
 }
 
 
-@media (max-height: 650px) {
-  body {
-    margin: 80px auto auto auto;
-  }
-  .main {
-    margin-top: 70px;
-  }
-}
 
-
-@media (max-height: 600px) {
+@media (min-height: 750px) {
   footer {
-    position: initial;
-    transform: initial;
-    margin: 40px 0 20px 0;
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
 }
 
