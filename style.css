@@ -72,7 +72,13 @@ footer {
 }
 
 
-@media (max-height: 640px) {
+@media (max-height: 650px) {
+  body {
+    margin: 80px auto auto auto;
+  }
+  .form {
+    margin-top: 70px;
+  }
   footer {
     position: initial;
     transform: initial;
@@ -85,7 +91,7 @@ footer {
   body {
     max-width: 90vw;
     font-size: 13px;
-    margin: 50px;
+    margin: 50px auto auto auto;
   }
   .form {
     margin-top: 60px;
@@ -99,7 +105,7 @@ footer {
 
 @media (max-width: 426px) {
   body {
-    margin: 40px;
+    margin: 30px auto auto auto;
   }
   .form {
     margin-top: 50px;
