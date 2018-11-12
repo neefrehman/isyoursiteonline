@@ -85,9 +85,21 @@ footer {
   body {
     max-width: 90vw;
     font-size: 13px;
-    margin: 50px;
+    margin: 40px;
   }
   .form {
     margin-top: 60px;
+  }
+  input {
+    padding: 13px
+  }
+}
+
+
+@media (max-height: 550px) and (max-width: 769px) {
+  footer {
+    position: initial;
+    transform: initial;
+    margin: 30px 0 20px 0;
   }
 }
