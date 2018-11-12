@@ -99,8 +99,6 @@ footer {
 
 @media (max-width: 426px) {
   body {
-    max-width: 90vw;
-    font-size: 13px;
     margin: 40px;
   }
   .form {
