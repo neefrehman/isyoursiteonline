@@ -1,2 +1,2 @@
-# checkr
+# idyoursiteonline
 Simple site checker 🌐
