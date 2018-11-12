@@ -23,15 +23,18 @@
 <body>
 
   <header>
-    <h1> LOGO </h1>
-    <h2> Title </h2>
+    <img class="logo" src="images/logo.png">
   </header>
 
-  <section class="form">
-    <p> Description/instructions </p>
-    <form class="" action="AWSurl.html" method="post">
+  <section class="main">
+    <div class="description">
+      <p> Enter your email and the website you'd like to watch [verify via link in email] </p>
+      <p> We'll check your site 3 times a day and let you know if we can't connect </p>
+      <p> We'll ask you to reconfirm every year, and if your site is offline for longer than a week we'll stop watching it</p>
+    </div>
+    <form action="AWSurl.html" method="post">
       <input type="email" name="email" placeholder="your email address" value="">
-      <input type="text" name="url" placeholder="url to check" value="">
+      <input type="text" name="url" placeholder="website to check" value="">
       <input type="submit" value="submit">
     </form>
   </section>

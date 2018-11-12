@@ -1,12 +1,18 @@
 body {
-  margin: 100px auto auto auto;
+  margin: 60px auto auto auto;
   max-width: 800px;
   background-color: #eceff1;
   font-family: helvetica neue, helvetica, arial, sans-serif;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 1.4;
   color: #333;
   text-align: center;
+}
+
+.logo {
+  width: 70%;
+  min-width: 200px;
+  max-width: 450px;
 }
 
 a, a:visited {
@@ -18,15 +24,19 @@ a:hover {
   background-color: #333;
 }
 
-.form {
-  margin-top: 100px;
+.main {
+  margin-top: 30px;
+}
+
+.description {
+  margin-bottom: 60px;
 }
 
 input {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
+  margin-bottom: 50px;
   padding: 15px;
   width: 85%;
   max-width: 300px;
@@ -44,15 +54,11 @@ input[type=submit] {
   min-width: initial;
   width: 100px;
   cursor: pointer;
-  transition: transform 0.2s;
+  transition: all 0.2s;
 }
 
 input[type=submit]:hover {
   transform: scale(1.05);
-}
-
-input[type=submit]:focus {
-  transform: scale(1);
 }
 
 input:focus, select:focus, textarea:focus, button:focus {
@@ -76,7 +82,7 @@ footer {
   body {
     margin: 80px auto auto auto;
   }
-  .form {
+  .main {
     margin-top: 70px;
   }
 }
@@ -86,7 +92,7 @@ footer {
   footer {
     position: initial;
     transform: initial;
-    margin: 30px 0 20px 0;
+    margin: 40px 0 20px 0;
   }
 }
 
@@ -97,7 +103,7 @@ footer {
     font-size: 13px;
     margin: 50px;
   }
-  .form {
+  .main {
     margin-top: 60px;
   }
   input {
@@ -111,7 +117,7 @@ footer {
   body {
     margin: 30px;
   }
-  .form {
+  .main {
     margin-top: 50px;
   }
   input {
