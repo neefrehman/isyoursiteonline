@@ -93,6 +93,9 @@ footer {
   body {
     margin: 30px;
   }
+  .logo {
+    margin-bottom: 20px;
+  }
   input {
     margin-top: 40px;
   }
