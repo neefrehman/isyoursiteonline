@@ -28,7 +28,6 @@ a:hover {
 
 .show-details {
   font-size: 0.9em;
-
 }
 
 .details {
@@ -97,6 +96,6 @@ footer {
     margin-bottom: 20px;
   }
   input {
-    margin-top: 40px;
+    margin-top: 35px;
   }
 }
