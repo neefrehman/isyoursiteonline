@@ -1,6 +1,7 @@
 body {
-  margin: 70px auto auto auto;
+  margin: auto;
   max-width: 800px;
+  height: 100vh;
   background-color: #eceff1;
   font-family: monospace;
   -webkit-font-smoothing: antialiased;
@@ -8,6 +9,9 @@ body {
   line-height: 1.4;
   color: #282828;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 a, a:visited {
@@ -23,11 +27,15 @@ a:hover {
   width: 70%;
   min-width: 200px;
   max-width: 350px;
-  margin-bottom: 40px;
+}
+
+.description {
+  margin: 40px 0 50px 0;
 }
 
 .show-details {
   font-size: 0.9em;
+  margin-block-start: -3px;
 }
 
 .details {
@@ -36,7 +44,7 @@ a:hover {
 
 input {
   display: block;
-  margin: 50px auto 0 auto;
+  margin: 40px auto 0 auto;
   padding: 15px;
   width: 85%;
   max-width: 300px;
@@ -53,8 +61,13 @@ input {
 input[type=submit] {
   min-width: initial;
   width: 100px;
+  background-color: #0e1e25;
   cursor: pointer;
   transition: all 0.2s;
+}
+
+input[type=submit]:hover {
+  transform: scale(1.05);
 }
 
 input:focus, select:focus, textarea:focus, button:focus {
@@ -71,12 +84,8 @@ input:-webkit-autofill {
   opacity: 0.9;
 }
 
-input[type=submit]:hover {
-  transform: scale(1.05);
-}
-
 footer {
-  margin: 40px 0 20px 0;
+  margin: 20px 0 0 0;
 }
 
 
@@ -84,7 +93,6 @@ footer {
   body {
     max-width: 90vw;
     font-size: 13px;
-    margin: 50px;
 }
   input {
     padding: 13px;
@@ -94,13 +102,8 @@ footer {
 
 
 @media (max-width: 426px) {
-  body {
-    margin: 30px;
-  }
-  .logo {
-    margin-bottom: 15px;
-  }
   input {
-    margin-top: 35px;
+    display: block;
+    margin: 30px auto 0 auto;
   }
 }
