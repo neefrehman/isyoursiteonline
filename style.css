@@ -25,12 +25,12 @@ a:hover {
 
 .logo {
   width: 70%;
-  min-width: 200px;
+  min-width: 230px;
   max-width: 350px;
 }
 
 .description {
-  margin: 50px 0;
+  margin: 50px auto;
 }
 
 .show-details {
@@ -91,8 +91,11 @@ footer {
 
 @media (max-width: 769px) {
   body {
-    max-width: 90vw;
+    max-width: 85vw;
     font-size: 13px;
+  }
+  .description {
+    max-width: 320px;
   }
   input {
     padding: 13px;
@@ -100,10 +103,9 @@ footer {
 }
 
 
-
 @media (max-width: 426px) {
   .description {
-    margin: 30px 0 40px 0;
+    margin: 30px auto 40px auto;
   }
   input {
     display: block;
