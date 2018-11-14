@@ -62,7 +62,8 @@ input:focus, select:focus, textarea:focus, button:focus {
 }
 
 input:-webkit-autofill {
-  background-color: #0e1e25;
+  -webkit-text-fill-color: #fff;
+  -webkit-box-shadow: 0 0 0px 1000px #0e1e25 inset;
 }
 
 ::placeholder {
