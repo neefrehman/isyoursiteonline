@@ -47,7 +47,7 @@ input {
   margin: 40px auto 0 auto;
   padding: 15px;
   width: 85%;
-  max-width: 280px;
+  max-width: 300px;
   font-family: monospace;
   font-size: 0.9em;
   color: #fff;
@@ -102,7 +102,7 @@ footer {
 
 @media (max-width: 426px) {
   .description {
-    margin: 30px auto 40px auto;
+    margin: 30px auto;
   }
   input {
     margin: 30px auto 0 auto;
