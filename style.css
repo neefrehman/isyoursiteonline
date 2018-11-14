@@ -61,6 +61,10 @@ input:focus, select:focus, textarea:focus, button:focus {
   outline: none;
 }
 
+input:-webkit-autofill {
+  background-color: #0e1e25;
+}
+
 ::placeholder {
   color: #eceff1;
   opacity: 0.9;
