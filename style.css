@@ -106,5 +106,6 @@ footer {
   }
   input {
     margin: 30px auto 0 auto;
+    max-width: 80%;
   }
 }
