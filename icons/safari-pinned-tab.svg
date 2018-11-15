@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>Favicon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Favicon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#0E1E25" x="0" y="0" width="32" height="32"></rect>
+        <polygon id="Rectangle-Copy-16" fill="#C8CE2F" fill-rule="nonzero" transform="translate(17.500000, 12.000000) scale(1, -1) translate(-17.500000, -12.000000) " points="7 3 28 3 28 21 7 18.4730804"></polygon>
+        <polygon id="Rectangle-Copy-17" fill="#F5FF02" fill-rule="nonzero" points="4 11 25 11 25 29 4 26.4730804"></polygon>
+        <text id="?" transform="translate(13.937742, 20.133087) rotate(20.000000) translate(-13.937742, -20.133087) " font-family="HelveticaNeueLTStd-BdEx, Helvetica Neue LT Std" font-size="20" font-style="expanded" font-weight="bold" letter-spacing="0.004764776" fill="#1F2E38">
+            <tspan x="6.75297762" y="24.1330874">?</tspan>
+        </text>
+    </g>
+</svg>
