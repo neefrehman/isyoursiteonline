@@ -33,12 +33,13 @@ a:hover {
   margin: 40px auto;
 }
 
-.show-details {
+.next1, .next2, .next3, .next4, .next5 {
   font-size: 0.9em;
   margin-block-start: -3px;
 }
 
-.details {
+.next2, .next3, .next4, .next5,
+.details2, .details3, .details4, .details5 {
   display: none;
 }
 
@@ -96,7 +97,6 @@ footer p {
 @media (max-width: 769px) {
   body {
     max-width: 85vw;
-    font-size: 13px;
   }
   .description {
     max-width: 320px;
@@ -105,6 +105,9 @@ footer p {
 
 
 @media (max-width: 426px) {
+  body {
+    font-size: 13px;
+  }
   .description {
     margin: 30px auto;
   }
