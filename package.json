@@ -1,0 +1,26 @@
+{
+  "name": "onboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "onboard.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neefrehman/onboard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neefrehman/onboard/issues"
+  },
+  "homepage": "https://github.com/neefrehman/onboard#readme",
+  "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
+    "axios": "^0.18.0",
+    "minimist": "^1.2.0",
+    "qs": "^6.5.2",
+    "uniq": "^1.0.1"
+  }
+}
