@@ -1,5 +1,5 @@
 {
-  "name": "onboard",
+  "name": "isyoursiteonline",
   "version": "1.0.0",
   "description": "",
   "main": "onboard.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/neefrehman/onboard.git"
+    "url": "git+https://github.com/neefrehman/isyoursiteonline.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/neefrehman/onboard/issues"
+    "url": "https://github.com/neefrehman/isyoursiteonline/issues"
   },
-  "homepage": "https://github.com/neefrehman/onboard#readme",
+  "homepage": "https://github.com/neefrehman/isyoursiteonline#readme",
   "dependencies": {
     "@sendgrid/mail": "^6.3.1",
     "axios": "^0.18.0",
