@@ -12,9 +12,9 @@ exports.handle= function(event, ctx, cb){
       confirm_email: event.confirm_url,
     },
   };
-  return sgMail.send(msg).then(function (response) {
-    console.log("sendgrid: then: " + JSON.stringify(response.data));
+  return sgMail.send(msg).then((response) => {
+    cb(null, 'Email successfully sent');
   }).catch((error) => {
-      console.log("sendgrid: catch: " + error);
+    cb(error);
   });
 };
