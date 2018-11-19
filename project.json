@@ -1,0 +1,10 @@
+{
+  "name": "isyoursiteonline",
+  "description": "A simple site checker",
+  "memory": 128,
+  "timeout": 5,
+  "runtime": "nodejs6.10",
+  "role": "arn:aws:iam::939949602288:role/lambda",
+  "environment": {},
+  "profile": "isyoursiteonline"
+}
