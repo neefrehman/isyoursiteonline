@@ -2,3 +2,4 @@
 /node_modules
 keys
 env.json
+/functions/**/node_modules
