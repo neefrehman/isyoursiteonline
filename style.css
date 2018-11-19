@@ -34,13 +34,15 @@ a:hover {
   margin: 40px auto;
 }
 
-.next1, .next2, .next3, .next4, .next5 {
+.next1, .next2, .next3, .next4, .next5,
+.submitted.reset {
   font-size: 0.9em;
   margin-block-start: -3px;
 }
 
 .next2, .next3, .next4, .next5,
-.details2, .details3, .details4, .details5 {
+.details2, .details3, .details4, .details5,
+.submitted {
   display: none;
 }
 
