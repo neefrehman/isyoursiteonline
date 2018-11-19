@@ -3,20 +3,19 @@ const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 sgMail.setSubstitutionWrappers('{{', '}}');
 
-module.exports = function helperSendEmail(email, name){
+module.exports = function helperSendEmail(email, website){
   const msg = {
     to: email,
-    bcc: 'neef@ustwo.com',
-    from: 'helloadventure@ustwo.com',
-    subject: 'Welcome to Adventure',
-    templateId: '126f4377-f2f1-4fb7-8db1-5707b752f7ab',
+    from: 'no-reply@isyoursite.offline',
+    subject: 'your site is offline',
+    templateId: 'd-6171b02881ea4115a088acdbafdba2f6',
     substitutions: {
-      firstName: name,
+      website_url: website,
     },
   };
   return sgMail.send(msg).then(function (response) {
     console.log("sendgrid: then: " + JSON.stringify(response.data));
   }).catch((error) => {
-      console.log("sendgrid: catch: " + error)
+      console.log("sendgrid: catch: " + error);
   });
-}
+};
