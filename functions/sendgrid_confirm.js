@@ -10,7 +10,7 @@ module.exports = function helperSendEmail(email, confirm_url){
     subject: 'your site is offline',
     templateId: 'd-9e95ebaf3cc04ce79b82423e57383c5e',
     substitutions: {
-      confirm_url: confirm_email,
+      confirm_email: confirm_url,
     },
   };
   return sgMail.send(msg).then(function (response) {
