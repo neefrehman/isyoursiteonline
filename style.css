@@ -88,6 +88,10 @@ input[type=submit]:hover {
   transform: scale(1.05);
 }
 
+input[type=submit]:focus {
+  transform: scale(1);
+}
+
 footer {
   margin: 20px 0 0 0;
 }
