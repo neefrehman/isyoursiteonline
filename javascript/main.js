@@ -29,7 +29,7 @@ var descriptionArray = [
 
 $(".next").click(function() {
     descriptionState = descriptionState + 1;
-    if (descriptionState > 4) {
+    if (descriptionState > descriptionArray.length - 2) {
         descriptionState = 0;
     }
     $(".details").html( descriptionArray[descriptionState].details );
