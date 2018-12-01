@@ -1,48 +1,45 @@
-$(".next1").click(function() {
-    $(".description p").hide();
-    $(".details2").show();
-    $(".next2").show();
-    return false;
-});
+var descriptionState = 0;
+var descriptionArray = [
+    {
+        details: "Enter your email and website and we'll let you know if your site goes down",
+        next: "The small print"
+    },
+    {
+        details: "We'll check your site once an hour and send you an email if we can't connect",
+        next: "What are the rules?"
+    },
+    {
+        details: "One watched domain per email address (new ones will be overwritten)",
+        next: "More..."
+    },
+    {
+        details: "If your site is offline for longer than a week we'll stop watching it",
+        next: "How?"
+    },
+    {
+        details: "You can learn about how it works and see the code in our <a href='https://github.com/neefrehman/isyoursiteonline' target='_blank'>GitHub repo</a>",
+        next: "Cool!"
+    },
+    {
+        details: "Thanks! Please confirm your email address via the link we just sent you",
+        next: "Got it!"
+    }
+];
 
-$(".next2").click(function() {
-    $(".description p").hide();
-    $(".details3").show();
-    $(".next3").show();
-    return false;
-});
 
-$(".next3").click(function() {
-    $(".description p").hide();
-    $(".details4").show();
-    $(".next4").show();
-    return false;
-});
-
-$(".next4").click(function() {
-    $(".description p").hide();
-    $(".details5").show();
-    $(".next5").show();
-    return false;
-});
-
-$(".next5").click(function() {
-    $(".description p").hide();
-    $(".details1").show();
-    $(".next1").show();
-    return false;
-});
-
-$(".submitted").click(function() {
-    $(".description p").hide();
-    $(".details1").show();
-    $(".next1").show();
+$(".next").click(function() {
+    descriptionState = descriptionState + 1;
+    if (descriptionState > 4) {
+        descriptionState = 0;
+    }
+    $(".details").html( descriptionArray[descriptionState].details );
+    $(".next a").html( descriptionArray[descriptionState].next );
     return false;
 });
 
 
 $("form").submit(function(e) {
-    $(".description p").hide();
-    $(".submitted").show();
+    $(".details").html( descriptionArray[descriptionArray.length - 1].details );
+    $(".next a").html( descriptionArray[descriptionArray.length - 1].next );
     return false;
 });
