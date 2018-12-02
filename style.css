@@ -124,3 +124,11 @@ footer {
     margin: 25px auto 30px auto;
   }
 }
+
+
+@media (pointer: coarse) {
+  a:hover {
+    color: initial;
+    background-color: initial;
+  }
+}
