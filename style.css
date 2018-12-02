@@ -39,6 +39,11 @@ a:hover {
   margin-block-start: -3px;
 }
 
+.next a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 input {
   display: block;
   margin: 40px auto 0 auto;

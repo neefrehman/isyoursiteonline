@@ -1,4 +1,3 @@
-var descriptionState = 0;
 var descriptionArray = [
     { details: "Enter your email and website and we'll let you know if your site goes down",
       next: "The small print" },
@@ -14,20 +13,21 @@ var descriptionArray = [
       next: "Got it!" }
 ];
 
+var descriptionState = 0;
+var next = document.querySelector(".next");
+var form = document.querySelector("Form");
 
-$(".next").click(function() {
+next.addEventListener("click", function() {
     descriptionState = descriptionState + 1;
     if (descriptionState > descriptionArray.length - 2) {
         descriptionState = 0;
     }
-    $(".details").html( descriptionArray[descriptionState].details );
-    $(".next a").html( descriptionArray[descriptionState].next );
-    return false;
+    document.querySelector(".details").innerHTML = descriptionArray[descriptionState].details;
+    document.querySelector(".next a").innerHTML = descriptionArray[descriptionState].next;
 });
 
-
-$("form").submit(function(e) {
-    $(".details").html( descriptionArray[descriptionArray.length - 1].details );
-    $(".next a").html( descriptionArray[descriptionArray.length - 1].next );
-    return false;
+form.addEventListener("submit", function(e) {
+    document.querySelector(".details").innerHTML = descriptionArray[descriptionArray.length - 1].details;
+    document.querySelector(".next a").innerHTML = descriptionArray[descriptionArray.length - 1].next;
+    e.preventDefault();
 });
