@@ -13,9 +13,11 @@ var descriptionArray = [
       next: "Got it!" }
 ];
 
+
 var descriptionState = 0;
 var next = document.querySelector(".next");
 var form = document.querySelector("Form");
+
 
 next.addEventListener("click", function() {
     descriptionState = descriptionState + 1;
@@ -25,6 +27,7 @@ next.addEventListener("click", function() {
     document.querySelector(".details").innerHTML = descriptionArray[descriptionState].details;
     document.querySelector(".next a").innerHTML = descriptionArray[descriptionState].next;
 });
+
 
 form.addEventListener("submit", function(e) {
     document.querySelector(".details").innerHTML = descriptionArray[descriptionArray.length - 1].details;
