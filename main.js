@@ -17,6 +17,8 @@ var descriptionArray = [
 var descriptionState = 0;
 var next = document.querySelector(".next");
 var form = document.querySelector("Form");
+var details = document.querySelector(".details");
+var nextLink = document.querySelector(".next a");
 
 
 next.addEventListener("click", function() {
@@ -24,13 +26,13 @@ next.addEventListener("click", function() {
     if (descriptionState > descriptionArray.length - 2) {
         descriptionState = 0;
     }
-    document.querySelector(".details").innerHTML = descriptionArray[descriptionState].details;
-    document.querySelector(".next a").innerHTML = descriptionArray[descriptionState].next;
+    details.innerHTML = descriptionArray[descriptionState].details;
+    nextLink.innerHTML = descriptionArray[descriptionState].next;
 });
 
 
 form.addEventListener("submit", function(e) {
-    document.querySelector(".details").innerHTML = descriptionArray[descriptionArray.length - 1].details;
-    document.querySelector(".next a").innerHTML = descriptionArray[descriptionArray.length - 1].next;
+    details.innerHTML = descriptionArray[descriptionArray.length - 1].details;
+    nextLink.innerHTML = descriptionArray[descriptionArray.length - 1].next;
     e.preventDefault();
 });
