@@ -26,11 +26,14 @@ next.addEventListener("click", function() {
     }
     details.innerHTML = descriptionArray[descriptionState].details;
     nextLink.innerHTML = descriptionArray[descriptionState].next;
+    details.classList.remove("submitted");
 });
 
 
 form.addEventListener("submit", function(e) {
+    descriptionState = - 1;
     details.innerHTML = descriptionArray[descriptionArray.length - 1].details;
     nextLink.innerHTML = descriptionArray[descriptionArray.length - 1].next;
+    details.classList.add("submitted");
     e.preventDefault();
 });
