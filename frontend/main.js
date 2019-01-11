@@ -1,6 +1,6 @@
 var descriptionState = 0;
 var next = document.querySelector(".next");
-var form = document.querySelector("Form");
+var form = document.querySelector("form");
 var details = document.querySelector(".details");
 var nextLink = document.querySelector(".next a");
 var descriptionArray = [
@@ -35,5 +35,6 @@ form.addEventListener("submit", function(e) {
     details.innerHTML = descriptionArray[descriptionArray.length - 1].details;
     nextLink.innerHTML = descriptionArray[descriptionArray.length - 1].next;
     details.classList.add("submitted");
+    form.reset();
     e.preventDefault();
 });
