@@ -1,9 +1,9 @@
-var descriptionState = 0;
-var next = document.querySelector(".next");
-var form = document.querySelector("form");
-var details = document.querySelector(".details");
-var nextLink = document.querySelector(".next a");
-var descriptionArray = [
+let descriptionState = 0;
+const next = document.querySelector(".next");
+const form = document.querySelector("form");
+const details = document.querySelector(".details");
+const nextLink = document.querySelector(".next a");
+const descriptionArray = [
     { details: "Enter your email and website and we'll let you know if your site goes down",
       next: "The small print" },
     { details: "We'll check your site once an hour and send you an email if we can't connect",
