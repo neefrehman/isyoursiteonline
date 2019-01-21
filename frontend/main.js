@@ -1,5 +1,4 @@
 let descriptionState = 0;
-const next = document.querySelector(".next");
 const form = document.querySelector("form");
 const details = document.querySelector(".details");
 const nextLink = document.querySelector(".next a");
@@ -19,7 +18,7 @@ const descriptionArray = [
 ];
 
 
-next.addEventListener("click", function() {
+nextLink.addEventListener("click", function() {
     descriptionState = descriptionState + 1;
     if (descriptionState > descriptionArray.length - 2) {
         descriptionState = 0;
